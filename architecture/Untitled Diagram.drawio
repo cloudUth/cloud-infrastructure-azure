@@ -1,56 +1,9 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
-  <diagram name="Basic Azure Infra" id="8QL8cq4_IUGfIG134slR">
-    <mxGraphModel dx="1635" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram name="Page-1" id="hx_jUZrFssDIYvvnv3xZ">
+    <mxGraphModel>
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="nWGUvMKUbBhebpgArSp3-1" value="Azure Entra ID" style="rounded=1;fillColor=#2C3E50;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="330" y="170" width="140" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-2" value="VNet" style="rounded=1;strokeColor=#1E818D;fillColor=#ECF0F1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="250" width="640" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-3" value="Web Subnet" style="rounded=1;fillColor=#AED6F1;" vertex="1" parent="nWGUvMKUbBhebpgArSp3-2">
-          <mxGeometry x="20" y="20" width="280" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-4" value="App Service Env\n(App Gateway + ASE)" style="rounded=1;fillColor=#85C1E9;" vertex="1" parent="nWGUvMKUbBhebpgArSp3-3">
-          <mxGeometry x="20" y="20" width="240" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-5" value="DB Subnet" style="rounded=1;fillColor=#F9E79F;" vertex="1" parent="nWGUvMKUbBhebpgArSp3-2">
-          <mxGeometry x="340" y="20" width="280" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-6" value="Azure SQL DB\n(Private Endpoint)" style="rounded=1;fillColor=#F7DC6F;" vertex="1" parent="nWGUvMKUbBhebpgArSp3-5">
-          <mxGeometry x="20" y="20" width="240" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;" edge="1" parent="nWGUvMKUbBhebpgArSp3-2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="530" y="170" as="sourcePoint" />
-            <mxPoint x="530.5" y="380" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-7" value="Azure Blob Storage\n(Service Endpoint)" style="rounded=1;fillColor=#ABEBC6;" vertex="1" parent="1">
-          <mxGeometry x="80" y="630" width="200" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-8" value="Azure Functions\n(Serverless)" style="rounded=1;fillColor=#BB8FCE;" vertex="1" parent="1">
-          <mxGeometry x="300" y="630" width="200" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-9" value="App Insights\n+ Log Analytics" style="rounded=1;fillColor=#F5B7B1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="630" width="200" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="nWGUvMKUbBhebpgArSp3-1" target="nWGUvMKUbBhebpgArSp3-4">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="370" y="220" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="nWGUvMKUbBhebpgArSp3-4" target="nWGUvMKUbBhebpgArSp3-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="nWGUvMKUbBhebpgArSp3-4" target="nWGUvMKUbBhebpgArSp3-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nWGUvMKUbBhebpgArSp3-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="nWGUvMKUbBhebpgArSp3-4" target="nWGUvMKUbBhebpgArSp3-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
