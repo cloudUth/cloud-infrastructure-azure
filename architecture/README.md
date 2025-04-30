@@ -7,4 +7,4 @@ This folder contains the system architecture diagrams for the cloud infrastructu
 
 \
 dokimi 
-![image](https://github.com/user-attachments/assets/050a1049-4dae-4e39-b6d4-f85e4ff83ea0)
+![image](https://github.com/user-attachments/assets/6a7dbf2a-66d4-4bab-bf8a-b8f27009afa4)
