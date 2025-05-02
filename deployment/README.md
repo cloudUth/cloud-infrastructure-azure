@@ -11,7 +11,7 @@ Each file defines a specific part of the environment and can be deployed indepen
 
 | File | Purpose |
 |------|---------|
-| `resource.bicep` | Creates shared foundational resources (e.g., VNet, naming conventions) |
+| `resource.bicep` | Creates shared foundational resources  |
 | `app_service.bicep` | Deploys the App Service Plan and a Web App |
 | `function.bicep` | Deploys an Azure Function App for serverless backend logic |
 | `blob_storage.bicep` | Creates a Storage Account and Blob container (for media or logs) |
