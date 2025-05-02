@@ -1,6 +1,9 @@
-# Presentation
-This folder holds final presentation materials for the project.
+# Final Presentation
 
-## Contents
-- PowerPoint slides or PDF versions
-- Any demo screenshots or architecture callouts
+This folder contains the final project presentation in PDF format.
+
+## 📄 File
+
+- `cloudUth.pdf` – Final team presentation for instructors
+
+> This file was exported from the team’s original PowerPoint/Google Slides deck.
