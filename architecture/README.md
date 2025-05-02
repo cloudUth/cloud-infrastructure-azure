@@ -6,5 +6,5 @@ This folder contains the system architecture diagrams for the cloud infrastructu
 - `azure-architecture.pdf` – Exported version for reports and presentations
 
 \
-dokimi 
-![image](https://github.com/user-attachments/assets/6a7dbf2a-66d4-4bab-bf8a-b8f27009afa4)
+final 
+![image](https://github.com/user-attachments/assets/163f6912-b899-489f-9194-f4e09a134098)
