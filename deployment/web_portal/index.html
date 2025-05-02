@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multisoftware Enterprise Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #3e2723;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            background-size: 400% 400%;
+            animation: backgroundShift 15s ease infinite;
+            transition: background 1s ease;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff6f00, #ffa000);
+            padding: 25px;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        }
+
+        nav {
+            background-color: #ef6c00;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #ffd180;
+            color: #4e342e;
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            margin-top: 30px;
+            animation: popUp 0.8s ease-in-out;
+            backdrop-filter: blur(8px);
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 25px;
+            color: #e65100;
+            animation: slideIn 1s ease forwards;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            opacity: 0.85;
+            animation: textReveal 1.5s ease forwards;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: #fff8e1;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .btn {
+            background-color: #f57c00;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ef6c00;
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes backgroundShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes popUp {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes textReveal {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section {
+                padding: 30px 20px;
+            }
+
+            section h2 {
+                font-size: 28px;
+            }
+
+            section p {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <img src="image.png" alt="Multisoftware Logo" style="height: 60px;">
+        <h1 style="font-size: 28px; color: white;">Multisoftware Enterprise Portal</h1>
+    </div>
+</header>
+
+<nav>
+    <a onclick="navigate('home')">Home</a>
+    <a onclick="navigate('privacy')">Privacy</a>
+    <a onclick="navigate('support')">Support</a>
+</nav>
+
+<main id="content">
+    <!-- Dynamic content -->
+</main>
+
+<footer>
+    &copy; 2025 Multisoftware Enterprice. All rights reserved.
+</footer>
+
+<script>
+    const pages = {
+        home: `
+            <section>
+                <h2>Welcome Home</h2>
+                <p>Welcome to the internal portal of Multisoftware Enterprise! Here, you can stay updated, access vital tools, and connect across departments easily.</p>
+                <p>Our mission is to empower teams by streamlining communication and providing seamless resource access wherever you are.</p>
+                <p>Let's work together towards innovation and excellence!</p>
+            </section>
+        `,
+        privacy: `
+            <section>
+                <h2>Privacy & Security</h2>
+                <p>At Multisoftware Enterprise, safeguarding your data is our highest commitment. We deploy advanced encryption and rigorous security practices across all services.</p>
+                <p>Through our Entra ID integration, enjoy secure, one-click access globally. Always protect your credentials and stay alert against threats.</p>
+                <div>
+                    <button class="btn" onclick="entraLogin()">Sign in with Entra ID</button>
+                </div>
+            </section>
+        `,
+        support: `
+            <section>
+                <h2>Support Center</h2>
+                <p>Our enhanced Support Platform will launch soon, providing real-time assistance, FAQs, and personalized solutions for all your needs.</p>
+                <p>Until then, please refer to our internal knowledge base or reach out directly to your team leads for any immediate queries.</p>
+                <p>We appreciate your patience as we build an even better support experience!</p>
+            </section>
+        `
+    };
+
+    function navigate(page) {
+        document.getElementById('content').innerHTML = pages[page];
+        switch(page) {
+            case 'home':
+                document.body.style.background = 'linear-gradient(135deg, #fff3e0, #ffe0b2)';
+                break;
+            case 'privacy':
+                document.body.style.background = 'linear-gradient(135deg, #dbeafe, #ffffff)';
+                break;
+            case 'support':
+                document.body.style.background = 'linear-gradient(135deg, #fff9c4, #ffffff)';
+                break;
+        }
+    }
+
+    navigate('home'); // Load Home on first visit
+
+    function entraLogin() {
+        alert("If the connection with Entra ID had been successful, you would now be redirected to the Microsoft UI.");
+    }
+</script>
+
+</body>
+</html>
