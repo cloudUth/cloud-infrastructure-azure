@@ -7,6 +7,7 @@ This folder includes the financial overview of the Azure cloud infrastructure de
 - `azure-cost-estimate.xlsx` – Exported estimate from the Azure Pricing Calculator
 - `CostManagement_april.xlsx` / `CostManagement_may.xlsx` –  Azure billing reports
 - `costanalysis_charts.png` – Visual comparison of Azure vs on-premise costs
+- `TCO.pdf` - Total Cost of Ownership (TCO) Calculator
 
 ##  Summary
 
